@@ -1,0 +1,103 @@
+body {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  background-color: antiquewhite;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  width: 800px;
+  height: 800px;
+  border-radius: 50px;
+  /* gap: 20px; */
+  margin: auto;
+  /* background-color: red; */
+}
+
+.btn-contaner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: rgb(180, 175, 168);
+
+  width: 800px;
+  height: 100px;
+}
+
+.btns {
+  display: flex;
+  margin-top: auto;
+  margin-bottom: auto;
+  align-items: center;
+  gap: 20px;
+}
+
+.add-note-btn,
+.edit-note-btn,
+.delete-note-btn {
+  display: block;
+  margin: auto auto;
+  border-radius: 6px;
+  padding: 5px;
+}
+
+.input {
+  width: 500px;
+  height: 30px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+}
+
+.hidden {
+  opacity: 0.5;
+}
+
+.notes-container {
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  background-color: rgb(250, 243, 243);
+  width: 800px;
+  height: 650px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.note-list {
+  list-style: none;
+  padding: 0;
+
+  overflow: scroll;
+}
+
+.date {
+  width: 180px;
+  display: inline-block;
+  padding: 5px;
+  margin-left: auto;
+  background-color: rgba(255, 255, 255, 0);
+  color: rgb(151, 151, 151);
+  border-radius: 5px;
+}
+
+.note {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px 10px 0px;
+  /* border-bottom: 2px solid rgb(195, 193, 193); */
+  padding-left: 20px;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+.note:nth-child(odd) {
+  background-color: rgb(233, 235, 231);
+}
+
+.note:nth-child(even) {
+  background-color: rgb(218, 217, 217);
+}
